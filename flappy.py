@@ -10,7 +10,12 @@ import numpy as np
 
 #Keras is a deep learning libarary
 from keras.models import load_model
-model = load_model('models/flappy_bird_trained_1.h5')
+path = input("Enter the location of your trained model : ")
+try:
+    model = load_model(path)
+except:
+    print("ERROR : Model doesn't exist. Loading default model from /models/samples/flappy_bird_model.h5")
+    model = load_model('models/samples/flappy_bird_model.h5')
 
 FPS = 30
 SCREENWIDTH = 288
@@ -295,7 +300,7 @@ def mainGame(movementInfo):
 
         lower_pipe_dis = lowerPipes[currPipe]['y'] - playery - IMAGES['player'][0].get_width()
         if crashTest[0]:
-            print("Crash : lpd : " , lower_pipe_dis , "   py : ", lowerPipes[currPipe]['y'],"   y : ",playery, "  ph : " , IMAGES['player'][0].get_height() , "  diff :  " , lowerPipes[currPipe]['y'] - playery)
+            #print("Crash : lpd : " , lower_pipe_dis , "   py : ", lowerPipes[currPipe]['y'],"   y : ",playery, "  ph : " , IMAGES['player'][0].get_height() , "  diff :  " , lowerPipes[currPipe]['y'] - playery)
             return {
                 'y': playery,
                 'groundCrash': crashTest[1],
@@ -540,6 +545,8 @@ def getHitmask(image):
         for y in xrange(image.get_height()):
             mask[x].append(bool(image.get_at((x, y))[3]))
     return mask
+
+
 
 
 if __name__ == '__main__':
