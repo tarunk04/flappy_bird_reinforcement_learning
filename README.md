@@ -1,4 +1,4 @@
-# Flappy_Bird_Reinforcement_Learning
+# Flappy_Bird_Reinforcement_Learning [![license](https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000)](https://github.com/tarunk04/flappy_bird_reinforcement_learning/blob/master/LICENSE)
 This is a simple Reinforcement Learning application on Flappy bird game.
 
 Flappy Bird
