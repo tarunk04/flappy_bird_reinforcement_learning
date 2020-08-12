@@ -29,5 +29,5 @@ ScreenShot
 
 High Score
 ----------
-High Socre so far achived using the traind model ( provided in `models/samples/`) is : **25378**
+High Score so far achieved using the trained model ( provided in `models/samples/`) is : **25378**
 ![Flappy Bird](screenshot_hs.png)
