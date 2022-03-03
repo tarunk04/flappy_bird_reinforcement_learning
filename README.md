@@ -30,4 +30,10 @@ ScreenShot
 High Score
 ----------
 High Score so far achieved using the trained model ( provided in `models/samples/`) is : **25378**
+
 ![Flappy Bird](screenshot_hs.png)
+
+
+--------------------
+
+[![BuyMeCoffe](https://cdn-images-1.medium.com/max/800/1*Dpw8-hNGI2fDmosV4E8DVQ.png)](https://www.buymeacoffee.com/tarunkumar)
